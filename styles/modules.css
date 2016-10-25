@@ -1,0 +1,55 @@
+
+
+#nav {
+  display:none;
+  clear: both;
+  list-style: none;
+  text-align: center;
+}
+
+.icon-menu {
+  float:right;
+  font-size: 30px;
+  /*display: inline-block;*/
+  margin: 5px;
+}
+
+
+#nav-box:hover ul {
+  display: block;
+}
+
+.tab{
+  font-size: 125%;
+  color: black;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 760px){
+  #nav-box {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+  }
+
+  #nav {
+    display:unset;
+    clear: both;
+    float:left;
+    width:100%;
+    margin: 2px 0%;
+    }
+
+  #nav li {
+    display:inline-block;
+
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .article{
+    max-width:400px;
+  }
+}
