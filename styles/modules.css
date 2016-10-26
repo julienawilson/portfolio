@@ -25,6 +25,10 @@
   margin-left: 10px;
 }
 
+.template{
+  display: none;
+}
+
 @media screen and (min-width: 760px){
   #nav-box {
   float: left;
@@ -49,7 +53,10 @@
     display: none;
   }
 
+
   .article{
     max-width:400px;
   }
+
+
 }
