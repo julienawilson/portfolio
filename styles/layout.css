@@ -11,15 +11,3 @@
   float: left;
   width:100%;
 }
-
-.article {
-  float: left;
-  width: 80%;
-  margin: 10%;
-  border: 2px solid black;
-
-}
-
-.article p {
-  margin:2%;
-}

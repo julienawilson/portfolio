@@ -1,4 +1,6 @@
-
+*{
+  border: 1px solid red;
+}
 
 #nav {
   display:none;
@@ -20,7 +22,7 @@
 }
 
 .tab{
-  font-size: 125%;
+  font-size: 160%;
   color: black;
   margin-left: 10px;
 }
@@ -29,12 +31,20 @@
   display: none;
 }
 
+.article {
+  float: left;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 10%;
+  border: 2px solid black;
+}
+
 @media screen and (min-width: 760px){
   #nav-box {
   float: left;
   width: 60%;
   margin-left: 20%;
-  }
+}
 
   #nav {
     display:unset;
@@ -42,7 +52,7 @@
     float:left;
     width:100%;
     margin: 2px 0%;
-    }
+  }
 
   #nav li {
     display:inline-block;
@@ -53,10 +63,16 @@
     display: none;
   }
 
-
-  .article{
-    max-width:400px;
+  #articles {
+    width:100%;
   }
 
+  .article {
+    margin: 0 auto;
+  }
+
+  .article p {
+  margin:4%;
+  }
 
 }
