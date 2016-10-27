@@ -12,7 +12,6 @@ Article.prototype.toHtml = function(){
   $newArticle.find('.article-title').text(this.title);
   $newArticle.find('.body').html(this.body);
   $newArticle.removeClass('template');
-  $newArticle.addClass('article');
   $newArticle.attr('data-category',this.category);
   return $newArticle;
 };

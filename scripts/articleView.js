@@ -9,4 +9,18 @@ articleView.handleMainNav = function(){
   $('#about').hide();
 };
 
+articleView.populateFilters = function() {
+  $('article').not('.template').each(function() {
+
+
+  });
+
+};
+
+
+
+
+
+
+
 articleView.handleMainNav();
