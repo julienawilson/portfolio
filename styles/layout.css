@@ -2,12 +2,26 @@
 
 
 #header {
+  padding-top: 8em;
   width: 100%;
   height: 3ems;
   float:left;
 }
 
-#articles{
+#home, #about{
   float: left;
   width:100%;
+}
+
+#about header{
+  margin:0 auto;
+  width:80%;
+  max-width: 600px;
+}
+
+#about section {
+  margin:0 auto;
+  margin-top: 3em;
+  width:80%;
+  max-width: 600px;
 }

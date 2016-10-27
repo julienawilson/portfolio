@@ -61,10 +61,6 @@
     display: none;
   }
 
-  #articles {
-    width:100%;
-  }
-
   .article {
     margin: 0 auto;
     margin-top: 2em;
@@ -74,4 +70,11 @@
   margin:4%;
   }
 
+}
+
+@media screen and (min-width: 1000px){
+
+  .article{
+    max-width:960px;
+  }
 }

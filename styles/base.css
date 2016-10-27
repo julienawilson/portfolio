@@ -11,6 +11,7 @@ body {
 }
 
 #title{
+  font-size: 300%;
   width:80%;
   float: left;
   margin-left:10%;

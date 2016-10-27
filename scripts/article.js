@@ -24,5 +24,5 @@ portfolioContent.forEach(function(ele){
 
 //insert the new HTML
 articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
+  $('#home').append(article.toHtml());
 });
