@@ -1,6 +1,4 @@
-*{
-  border: 1px solid red;
-}
+
 
 #nav {
   display:none;
@@ -21,7 +19,7 @@
   display: block;
 }
 
-.tab{
+#nav-box li{
   font-size: 160%;
   color: black;
   margin-left: 10px;
@@ -69,6 +67,7 @@
 
   .article {
     margin: 0 auto;
+    margin-top: 2em;
   }
 
   .article p {
