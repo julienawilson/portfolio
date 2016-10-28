@@ -1,19 +1,16 @@
 var articles = [];
 //make the new object
 function Article (post){
-  this.title = post.title;
-  this.body = post.body;
-  this.category= post.category;
+  for (key in post){
+    this[key] = post[key];
+  }
 };
 
 //apply object properties in to new html chunk
 Article.prototype.toHtml = function(){
-  var $newArticle = $('.template').clone();
-  $newArticle.find('.article-title').text(this.title);
-  $newArticle.find('.body').html(this.body);
-  $newArticle.removeClass('template');
-  $newArticle.attr('data-category',this.category);
-  return $newArticle;
+  var source = $('#article-template').html();
+  var templateRender = Handlebars.compile(source);
+  return templateRender(this);
 };
 
 //run portfolioContent through Article constructor

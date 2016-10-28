@@ -33,7 +33,7 @@
   /*float: left;*/
   width: 80%;
   max-width: 600px;
-  margin: 20px 10%;
+  margin: 2em 10%;
   border: 2px solid black;
 }
 
@@ -64,6 +64,7 @@
   .article {
     margin: 0 auto;
     margin-top: 2em;
+    width: 100%;
   }
 
   .article p {
