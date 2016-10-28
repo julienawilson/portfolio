@@ -20,7 +20,6 @@ Article.prototype.toCategoryFilter = function(){
 };
 
 
-
 //run portfolioContent through Article constructor
 portfolioContent.forEach(function(ele){
   articles.push(new Article(ele));
