@@ -4,6 +4,6 @@ var portfolioContent = [
    category: 'Games'},
    {title: 'Another Cool Thing I did!',
     body: '<p>Experience here my very impressive work!</p>',
-    category: 'Other'}
+    category: 'Games'}
 
 ];
