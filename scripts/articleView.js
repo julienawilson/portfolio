@@ -5,6 +5,7 @@ articleView.handleMainNav = function(){
     var $thisContent = $(this).attr('data-content');
     $('.tab-content').hide();
     $('#'+$thisContent).show();
+    $('title').text('Julien Wilson: '+($thisContent).toUpperCase());
   });
   $('#about').hide();
 };
