@@ -10,16 +10,18 @@ body {
   text-align: center;
 }
 
-#title{
+#title {
   font-size: 300%;
   width:80%;
   float: left;
   margin-left:10%;
 }
 
+ul#nav a{
+  text-decoration: none;
+}
 
-
-.article-title{
+.article-title {
   text-align: center;
 
 
