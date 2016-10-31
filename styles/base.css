@@ -21,6 +21,10 @@ ul#nav a{
   text-decoration: none;
 }
 
+#filters{
+  list-style: none;
+}
+
 .article-title {
   text-align: center;
 
