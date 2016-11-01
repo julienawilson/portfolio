@@ -1,4 +1,3 @@
-var articles = [];
 //make the new object
 function Article (post){
   for (key in post){
@@ -6,29 +5,29 @@ function Article (post){
   }
 };
 
-//apply object properties in to new html chunk
-Article.prototype.articleConstructor = function(){
-  var source = $('#article-template').html();
-  var templateRender = Handlebars.compile(source);
-  return templateRender(this);
-};
+Article.allArticles = [];
 
-Article.prototype.toCategoryFilter = function(){
-  var source = $('#category-template').html();
-  var templateRender = Handlebars.compile(source);
-  return templateRender(this);
+Article.prototype.toHtml = function(scriptTemplateId) {
+  var template = Handlebars.compile($(scriptTemplateId).text());
+  return template(this);
 };
 
 
-//run portfolioContent through Article constructor
-portfolioContent.forEach(function(ele){
-  articles.push(new Article(ele));
-});
+//run portfolioContent through Article constructor .loadAll
+Article.loadAll = function(inputData) {
+  inputData.forEach(function(ele) {
+    Article.allArticles.push(new Article(ele));
+  });
+};
 
-//insert the new HTML
-articles.forEach(function(article) {
-  $('#home').append(article.articleConstructor());
-  if($('#category-filter option[value="'+article.category+'"]').length === 0){
-    $('#category-filter').append(article.toCategoryFilter());
-  };
-});
+//this will be my AJAX
+Article.fetchAll = function(){
+  console.log('vlur');
+  $.getJSON('Data/portfolioContent.json', function(data, msg, xhr) {
+    console.log(msg);
+    Article.loadAll(data);
+    localStorage.blogArticles = JSON.stringify(data);
+    localStorage.eTag = xhr.getResponseHeader('ETag');
+    articleView.renderIndexPage();
+  });
+};
