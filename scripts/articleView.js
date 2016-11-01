@@ -22,7 +22,6 @@ articleView.handleCategoryFilter = function() {
 };
 
 articleView.renderIndexPage = function(){
-  //insert the new HTML/ render
   Article.allArticles.forEach(function(article) {
     $('#home').append(article.toHtml('#article-template'));
     if($('#category-filter option[value="'+article.category+'"]').length === 0){
@@ -35,6 +34,4 @@ articleView.renderIndexPage = function(){
 articleView.handleMainNav();
 articleView.handleCategoryFilter();
 
-//Article.fetchAll();
 Article.fetchAll();
-//articleView.renderIndexPage();

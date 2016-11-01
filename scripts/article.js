@@ -12,15 +12,12 @@ Article.prototype.toHtml = function(scriptTemplateId) {
   return template(this);
 };
 
-
-//run portfolioContent through Article constructor .loadAll
 Article.loadAll = function(inputData) {
   inputData.forEach(function(ele) {
     Article.allArticles.push(new Article(ele));
   });
 };
 
-//this will be my AJAX
 Article.fetchAll = function(){
   console.log('vlur');
   $.getJSON('Data/portfolioContent.json', function(data, msg, xhr) {
