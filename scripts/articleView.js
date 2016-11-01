@@ -33,5 +33,4 @@ articleView.renderIndexPage = function(){
 
 articleView.handleMainNav();
 articleView.handleCategoryFilter();
-
 Article.fetchAll();
