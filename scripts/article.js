@@ -4,7 +4,7 @@
   function Article (post){
     for (key in post){
       this[key] = post[key];
-    }
+    };
   };
 
   Article.allArticles = [];

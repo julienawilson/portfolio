@@ -11,7 +11,6 @@
       $('#'+$thisContent).fadeIn();
       $('title').text('Julien Wilson: '+($thisContent).toUpperCase());
     });
-
   };
 
   articleView.handleCategoryFilter = function() {
@@ -34,7 +33,6 @@
       $('footer span').text(Article.numArticles());
     });
   };
-
 
   articleView.handleMainNav();
   articleView.handleCategoryFilter();
