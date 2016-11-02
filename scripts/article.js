@@ -1,3 +1,5 @@
+//IIFE
+(function(module) {
 //make the new object
 function Article (post){
   for (key in post){
@@ -31,3 +33,6 @@ Article.fetchAll = function(){
     articleView.renderIndexPage();
   });
 };
+
+  module.Article = Article;
+})(window);
