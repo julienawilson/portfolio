@@ -5,6 +5,8 @@ function Article (post){
   }
 };
 
+
+
 Article.allArticles = [];
 
 Article.prototype.toHtml = function(scriptTemplateId) {
@@ -12,16 +14,17 @@ Article.prototype.toHtml = function(scriptTemplateId) {
   return template(this);
 };
 
-Article.loadAll = function(inputData) {
-  inputData.forEach(function(ele) {
-    Article.allArticles.push(new Article(ele));
+
+Article.loadAll = function(inputData){
+  Article.allArticles = inputData.map(function(elem){
+    return new Article(elem);
   });
 };
 
+
+
 Article.fetchAll = function(){
-  console.log('vlur');
   $.getJSON('Data/portfolioContent.json', function(data, msg, xhr) {
-    console.log(msg);
     Article.loadAll(data);
     localStorage.blogArticles = JSON.stringify(data);
     localStorage.eTag = xhr.getResponseHeader('ETag');
