@@ -4,13 +4,14 @@
   var articleView = {};
 
   articleView.handleMainNav = function(){
+    $('#about').hide();
     $('#nav-box').on('click','.tab', function(){
       var $thisContent = $(this).attr('data-content');
       $('.tab-content').hide();
-      $('#'+$thisContent).show();
+      $('#'+$thisContent).fadeIn();
       $('title').text('Julien Wilson: '+($thisContent).toUpperCase());
     });
-    $('#about').hide();
+
   };
 
   articleView.handleCategoryFilter = function() {
@@ -30,6 +31,7 @@
       if($('#category-filter option[value="'+article.category+'"]').length === 0){
         $('#category-filter').append(article.toHtml('#category-template'));
       };
+      $('footer span').text(Article.numArticles());
     });
   };
 

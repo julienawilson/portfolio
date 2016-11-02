@@ -26,6 +26,12 @@
   max-width: 600px;
 }
 
+footer {
+  float: left;
+  margin-top: 2em;
+  width: 100%;
+}
+
 @media screen and (min-width: 760px){
 
   #home, #about{
