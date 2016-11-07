@@ -1,0 +1,43 @@
+
+
+
+#header {
+  padding-top: 8em;
+  width: 100%;
+  height: 3ems;
+  float:left;
+}
+
+#home, #about{
+  float: left;
+  width:100%;
+}
+
+#about header{
+  margin:0 auto;
+  width:80%;
+  max-width: 600px;
+}
+
+#about section {
+  margin:0 auto;
+  margin-top: 3em;
+  width:80%;
+  max-width: 600px;
+}
+
+footer {
+  float: left;
+  margin-top: 2em;
+  width: 100%;
+}
+
+@media screen and (min-width: 760px){
+
+  #home, #about{
+    float: left;
+    width:80%;
+    margin: 0 10%;
+  }
+
+}

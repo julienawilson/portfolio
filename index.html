@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julien Wilson Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="vendor/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+<script id="article-template" type="text/x-handlebars-template">
+  <div class="article" data-category="{{category}}">
+    <img src={{image}}>
+    <section>
+      <h2 class="article-title">{{title}}</h2>
+      <div class="body">
+        {{{body}}}
+      </div>
+    </section>
+</div>
+</script>
+<script id="category-template" type="text/x-handlebars-template">
+  <option value="{{category}}">{{category}}</option>
+</script>
+  </head>
+  <body>
+    <div id="header">
+        <h1 id="title">Web Design by Julien Wilson</h1>
+        <div id="nav-box">
+          <div class="icon-menu"></div>
+          <ul id="nav">
+            <li class="tab" data-content="home"><a href="#" class="icon-home3" >Home</a></li>
+            <li class="tab" data-content="about"><a href="#" class="icon-plus" >About</a></li>
+            <li id="gitHub"><a href="https://github.com/julienawilson" target="_blank" class="icon-github">GitHub</a></li>
+            <li id="instagram"><a href="https://www.instagram.com/earthtojulien/" target="_blank" class="icon-rocket" >Instagram</a></li>
+          </ul>
+        </div>
+    </div>
+    <div id="home" class="tab-content">
+      <div>
+        <ul id="filters">
+          <li> <select id="category-filter">
+              <option value="">-- Filter by Categories --</option>
+          </select> </li>
+        </ul>
+      </div>
+  </div>
+  <div id="about" class="tab-content">
+       <header>
+           <h1>About Julien!</h1>
+        </header>
+             <section>
+               <h2>What is this?</h2>
+               <p>This blog showcases some of my work and other interests of mine.</p>
+               </section>
+              <section>
+               <h2>Some of my intrests:</h2>
+               <ul>
+                 <li>Coding</li>
+                 <li>Climbing</li>
+                 <li>Teaching my interests</li>
+               </ul>
+             </section>
+  </div>
+  <footer>
+    <h4>This page contains <span></span> articles.</h4>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script type="text/javascript" src="scripts/portfolioContent.js"></script>
+  <script type="text/javascript" src="scripts/article.js"></script>
+  <script type="text/javascript" src="scripts/articleView.js"></script>
+      </body>
+</html>
