@@ -3,6 +3,7 @@
 
   var articleView = {};
 
+//control Tab clicking
   articleView.handleMainNav = function(){
     $('#about').hide();
     $('#nav-box').on('click','.tab', function(){
@@ -13,6 +14,7 @@
     });
   };
 
+//runs the category-filter interactivity
   articleView.handleCategoryFilter = function() {
     $('#category-filter').on('change', function() {
       if ($(this).val()) {
@@ -24,6 +26,7 @@
     });
   };
 
+//builds the page
   articleView.renderIndexPage = function(){
     Article.allArticles.forEach(function(article) {
       $('#home').append(article.toHtml('#article-template'));
