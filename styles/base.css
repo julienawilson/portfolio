@@ -21,6 +21,11 @@ ul#nav a{
   text-decoration: none;
 }
 
+footer a{
+  text-decoration: none;
+  color: white
+}
+
 #filters{
   list-style: none;
 }
