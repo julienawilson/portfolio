@@ -3,8 +3,8 @@
   var contactController = {};
 
   contactController.reveal = function(){
-    $('.tab-content').hide;
-    $('#contact').fadeIn;
+    $('.tab-content').hide();
+    $('#contact').fadeIn();
   };
 
   module.contactController = contactController;

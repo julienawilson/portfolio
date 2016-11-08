@@ -3,8 +3,8 @@
   var projectController = {};
 
   projectController.reveal = function(){
-    $('.tab-content').hide;
-    $('#home').fadeIn;
+    $('.tab-content').hide();
+    $('#home').fadeIn();
   };
 
   module.projectController = projectController;
