@@ -4,15 +4,15 @@
   var projectView = {};
 
 //control Tab clicking
-  projectView.handleMainNav = function(){
-    $('#about').hide();
-    $('#nav-box').on('click','.tab', function(){
-      var $thisContent = $(this).attr('data-content');
-      $('.tab-content').hide();
-      $('#'+$thisContent).fadeIn();
-      $('title').text('Julien Wilson: '+($thisContent).toUpperCase());
-    });
-  };
+  // projectView.handleMainNav = function(){
+  //   $('#about').hide();
+  //   $('#nav-box').on('click','.tab', function(){
+  //     var $thisContent = $(this).attr('data-content');
+  //     $('.tab-content').hide();
+  //     $('#'+$thisContent).fadeIn();
+  //     $('title').text('Julien Wilson: '+($thisContent).toUpperCase());
+  //   });
+  // };
 
 //runs the category-filter interactivity
   projectView.handleCategoryFilter = function() {
@@ -36,8 +36,8 @@
       $('footer span').text(Project.numProjects());
     });
   };
-
-  projectView.handleMainNav();
+  //
+  // projectView.handleMainNav();
   projectView.handleCategoryFilter();
   Project.fetchAll(projectView.renderIndexPage);
 
