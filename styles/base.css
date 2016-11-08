@@ -10,12 +10,30 @@ body {
   text-align: center;
 }
 
-#title{
+#title {
+  font-size: 300%;
   width:80%;
   float: left;
   margin-left:10%;
 }
 
-.article-title{
+ul#nav a{
+  text-decoration: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: white
+}
+
+#filters{
+  list-style: none;
+}
+
+.project-title {
   text-align: center;
 }
+
+footer {
+    text-align: center;
+  }

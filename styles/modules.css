@@ -1,7 +1,3 @@
-*{
-  border: 1px solid red;
-}
-
 #nav {
   display:none;
   clear: both;
@@ -12,7 +8,6 @@
 .icon-menu {
   float:right;
   font-size: 30px;
-  /*display: inline-block;*/
   margin: 5px;
 }
 
@@ -21,29 +16,38 @@
   display: block;
 }
 
-.tab{
+#nav-box li{
   font-size: 160%;
-  color: black;
   margin-left: 10px;
 }
 
-.template{
-  display: none;
+#nav-box a{
+  color: black;
 }
 
-.article {
-  float: left;
+.project {
+  /*float: left;*/
   width: 80%;
   max-width: 600px;
-  margin: 20px 10%;
+  margin: 4em 10%;
   border: 2px solid black;
+}
+
+.project img{
+  margin-left: 20%;
+  width: 60%;
+  display: block;
+}
+
+.project section{
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 760px){
   #nav-box {
   float: left;
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
 }
 
   #nav {
@@ -56,23 +60,47 @@
 
   #nav li {
     display:inline-block;
-
+    margin: 0 1em;
   }
 
   .icon-menu {
     display: none;
   }
 
-  #articles {
-    width:100%;
-  }
-
-  .article {
+  .project {
     margin: 0 auto;
+    margin-top: 2em;
+    width: 100%;
   }
 
-  .article p {
+  .project p {
   margin:4%;
   }
+
+}
+
+@media screen and (min-width: 1000px){
+
+  .project{
+    max-width:960px;
+    /*this expands div to include image*/
+    overflow: auto;
+  }
+}
+
+
+@media screen and (min-width: 1280px){
+.project{
+    max-width: 1200px;
+    margin-bottom: 6em;
+}
+
+.project img{
+  margin-left: 0;
+  margin-right: 4em;
+  float: left;
+  max-width: 40%;
+  max-height: 100%;
+}
 
 }
