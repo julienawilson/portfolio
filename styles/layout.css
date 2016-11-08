@@ -8,18 +8,18 @@
   float:left;
 }
 
-#home, #about{
+#home, #about, #contact{
   float: left;
   width:100%;
 }
 
-#about header{
+#about header, #contact header{
   margin:0 auto;
   width:80%;
   max-width: 600px;
 }
 
-#about section {
+#about section, #contact section {
   margin:0 auto;
   margin-top: 3em;
   width:80%;

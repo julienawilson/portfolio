@@ -24,29 +24,32 @@
 </script>
   </head>
   <body>
+
     <div id="header">
 
-        <div id="nav-box">
-          <div class="icon-menu"></div>
-          <ul id="nav">
-            <li class="tab" data-content="home"><a href="#" class="icon-home3" >Home</a></li>
-            <li class="tab" data-content="about"><a href="#" class="icon-plus" >About</a></li>
-            <li id="gitHub"><a href="https://github.com/julienawilson" target="_blank" class="icon-github">GitHub</a></li>
-            <li id="instagram"><a href="https://www.instagram.com/earthtojulien/" target="_blank" class="icon-rocket" >Instagram</a></li>
-          </ul>
-          <h1 id="title">Web Design by Julien Wilson</h1>
-        </div>
-    </div>
-    <div id="home" class="tab-content">
-      <div>
-        <ul id="filters">
-          <li> <select id="category-filter">
-              <option value="">-- Filter by Categories --</option>
-          </select> </li>
-        </ul>
+          <div id="nav-box">
+            <div class="icon-menu"></div>
+            <ul id="nav">
+              <li class="tab" data-content="home"><a href="#" class="icon-home3" >Home</a></li>
+              <li class="tab" data-content="about"><a href="#" class="icon-plus" >About</a></li>
+              <li class="tab" data-content="contact"><a href="#" class="address-book" >Contact Me</a></li>
+              <li id="gitHub"><a href="https://github.com/julienawilson" target="_blank" class="icon-github">GitHub</a></li>
+              <li id="instagram"><a href="https://www.instagram.com/earthtojulien/" target="_blank" class="icon-rocket" >Instagram</a></li>
+            </ul>
+            <h1 id="title">Web Design by Julien Wilson</h1>
+          </div>
       </div>
-  </div>
-  <div id="about" class="tab-content">
+    <main>
+      <div id="home" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li> <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+            </select> </li>
+          </ul>
+        </div>
+      </div>
+      <div id="about" class="tab-content">
        <header>
            <h1>About Julien!</h1>
         </header>
@@ -62,7 +65,19 @@
                  <li>Teaching my interests</li>
                </ul>
              </section>
-  </div>
+      </div>
+      <div id="contact" class="tab-content">
+        <header>Here's a super rad contact me section</header>
+        <section>
+          <p>drop me a line here</p>
+          <ul>
+            <li>Email: julienawilson@gmail.com</li>
+            <li>Phone: 310.261.5676</li>
+            <li>On the street:</li>
+          </ul>
+        </section>
+      </div>
+    </main>
   <footer>
     <h4>This page contains <span></span> articles.</h4>
   </footer>
