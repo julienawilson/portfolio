@@ -22,6 +22,13 @@
 <script id="category-template" type="text/x-handlebars-template">
   <option value="{{category}}">{{category}}</option>
 </script>
+<script id="git-template" type="text/x-handlebars-template">
+  <div>
+    <h4><a href="{{html_url}}">{{name}}</a></h4>
+    <p>{{description}}</p>
+    <p> Last Updated: {{updated_at}}</p>
+  </div>
+</script>
   </head>
   <body>
 
@@ -64,6 +71,10 @@
                  <li>Teaching my interests</li>
                </ul>
              </section>
+             <section id="gitAbout">
+
+                 <h3><a href="github.com/user/julienawilson">Julien's gitHub</a></h3>
+             </section>
       </div>
       <div id="contact" class="tab-content">
         <header>Here's a super rad contact me section</header>
@@ -83,6 +94,8 @@
   <script type="text/javascript" src="vendor/scripts/page.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
+  <script type="text/javascript" src="githubToken.js"></script>
   <script type="text/javascript" src="scripts/Model/project.js"></script>
   <script type="text/javascript" src="scripts/View/projectView.js"></script>
   <script type="text/javascript" src="scripts/Controller/aboutController.js"></script>
@@ -90,5 +103,8 @@
   <script type="text/javascript" src="scripts/Controller/contactController.js"></script>
   <script type="text/javascript" src="scripts/Controller/pageRouter.js"></script>
 
-      </body>
+  <script type="text/javascript" src="scripts/Model/repos.js"></script>
+  <script type="text/javascript" src="scripts/View/repoView.js"></script>
+
+  </body>
 </html>
