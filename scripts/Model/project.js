@@ -26,12 +26,9 @@
 
   Project.getFromJSON = function(nextFunction){
     $.getJSON('Data/portfolioContent.json', function(data, msg, xhr) {
-      console.log('data='+data);
       Project.loadAll(data);
-      console.log('allproject='+Project.allProjects);
       localStorage.blogProjects = JSON.stringify(data);
       localStorage.ETag = xhr.getResponseHeader('ETag');
-      console.log('red');
       nextFunction();
     });
   };
