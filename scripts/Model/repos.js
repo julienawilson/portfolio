@@ -4,14 +4,14 @@
   repos.allRepos = [];
 
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url:'https://api.github.com/users/julienawilson/repos',
-      type:'GET',
-      headers:{'Authorization':'token '+githubToken},
-      success: function(data,message,xhr){
+    $.when(
+      $.get('/github/users/julienawilson/repos', function(data){
         repos.allRepos=data;
-        callback(data);}
-    });
+      }),
+      $.get('/github/users/julienawilson/followers', function(data){
+        repos.followers = data;
+      })
+    ).done(callback);
   };
 
   repos.withTheAttribute = function(myAttr) {
